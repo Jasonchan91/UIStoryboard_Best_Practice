@@ -31,13 +31,13 @@ class HomeViewController: UIViewController {
     
     @IBAction func pushADidTap(_ sender: UIButton) {
         
-        let viewController: ViewControllerA = instantiateViewController(withParentStoryboard: UIStoryboard.storyboard(.main))
+        let viewController: ViewControllerA = instantiateViewController(withParentStoryboard: .main)
         viewController.viewAIdentifier = ViewControllerA.viewControllerIdentifier
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func pushBDidTap(_ sender: UIButton) {
-        let viewController: ViewControllerB = instantiateViewController(withParentStoryboard: UIStoryboard.storyboard(.main))
+        let viewController: ViewControllerB = instantiateViewController(withParentStoryboard: .main)
         viewController.viewBIdentifier = ViewControllerB.viewControllerIdentifier
         navigationController?.pushViewController(viewController, animated: true)
     }

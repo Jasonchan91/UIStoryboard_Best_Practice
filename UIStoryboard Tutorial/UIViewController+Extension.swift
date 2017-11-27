@@ -18,7 +18,8 @@ extension UIViewControllerIdenfiable where Self: UIViewController {
         return String(describing: self)
     }
     
-    func instantiateViewController<T: UIViewController>(withParentStoryboard storyboard: UIStoryboard) -> T {
+    func instantiateViewController<T: UIViewController>(withParentStoryboard storyboard: UIStoryboard.Storyboard) -> T {
+        let storyboard = UIStoryboard(name: storyboard.fileName, bundle: nil)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: String(describing: T.viewControllerIdentifier)) as? T
             else {
             fatalError("Could not instantiate a view controller with identifier \(T.viewControllerIdentifier)")

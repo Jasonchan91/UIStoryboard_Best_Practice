@@ -21,10 +21,4 @@ extension UIStoryboard {
     }
 }
 
-extension UIStoryboard {
-    
-    class func storyboard(_ storyboard: Storyboard, bundle: Bundle? = nil) -> UIStoryboard {
-        return UIStoryboard(name: storyboard.fileName, bundle: bundle)
-    }
-}
 
