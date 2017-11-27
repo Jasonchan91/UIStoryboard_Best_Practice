@@ -60,7 +60,7 @@ enum Storyboard: String {
 Now you can instatiate your view controller by this way
 
 ```
-let viewController: ViewControllerA = instantiateViewController(withParentStoryboard: UIStoryboard.storyboard(.main))
+let viewController: ViewControllerA = instantiateViewController(withParentStoryboard: .main)
 viewController.viewAIdentifier = ViewControllerA.viewControllerIdentifier
 
 navigationController?.pushViewController(viewController, animated: true)

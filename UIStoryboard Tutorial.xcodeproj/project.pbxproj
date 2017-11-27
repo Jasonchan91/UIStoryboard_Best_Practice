@@ -19,6 +19,7 @@
 		5E4575031FCC543A00023778 /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4575021FCC543A00023778 /* ViewControllerA.swift */; };
 		5E4575051FCC544300023778 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4575041FCC544300023778 /* ViewControllerB.swift */; };
 		5E4575071FCC594400023778 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4575061FCC594400023778 /* UIStoryboard+Extension.swift */; };
+		5E48AB671FCCD81A00EDB8D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E48AB661FCCD81A00EDB8D5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		5E4575021FCC543A00023778 /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		5E4575041FCC544300023778 /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 		5E4575061FCC594400023778 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		5E48AB661FCCD81A00EDB8D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				5E4574EB1FCC49DD00023778 /* Assets.xcassets */,
 				5E4574ED1FCC49DD00023778 /* LaunchScreen.storyboard */,
 				5E4574F01FCC49DD00023778 /* Info.plist */,
+				5E48AB661FCCD81A00EDB8D5 /* README.md */,
 			);
 			path = "UIStoryboard Tutorial";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E48AB671FCCD81A00EDB8D5 /* README.md in Resources */,
 				5E4574F91FCC4D6100023778 /* HomeViewController.storyboard in Resources */,
 				5E4575011FCC542B00023778 /* Main.storyboard in Resources */,
 				5E4574EF1FCC49DD00023778 /* LaunchScreen.storyboard in Resources */,
