@@ -92,6 +92,6 @@ Neat and easy right? : ) wish you like it.
 
 * [AndyyHope](https://github.com/andyyhope/Blog_UIStoryboardSafety) - UIStoryboard: Safer with Enums, Protocol Extensions and Generics
 * [Stan Ostrovskiy](https://medium.com/ios-os-x-development/xcode-a-better-way-to-deal-with-storyboards-8b6a8b504c06) - Xcode: A Better Way to Deal with Storyboards
-*[Natasha The Robot](https://www.natashatherobot.com/swift-3-0-refactoring-cues/) - Swift 3.0 Refactoring Cues
+* [Natasha The Robot](https://www.natashatherobot.com/swift-3-0-refactoring-cues/) - Swift 3.0 Refactoring Cues
 
 Thanks.
