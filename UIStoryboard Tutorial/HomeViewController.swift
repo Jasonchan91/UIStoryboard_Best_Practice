@@ -19,26 +19,34 @@ class HomeViewController: UIViewController {
     @IBAction func presentButtonDidTap(_ sender: UIButton) {
         
         let viewController: SecondViewController = instantiateViewController()
-        viewController.identifier = SecondViewController.viewControllerIdentifier
+        viewController.identifier = SecondViewController.identifier
         present(viewController, animated: true, completion: nil)
     }
     
     @IBAction func pushButtonDidTap(_ sender: UIButton) {
         let viewController: SecondViewController = instantiateViewController()
-        viewController.identifier = SecondViewController.viewControllerIdentifier
+        viewController.identifier = SecondViewController.identifier
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func pushADidTap(_ sender: UIButton) {
         
         let viewController: ViewControllerA = instantiateViewController(withParentStoryboard: .main)
-        viewController.viewAIdentifier = ViewControllerA.viewControllerIdentifier
+        viewController.viewAIdentifier = ViewControllerA.identifier
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func pushBDidTap(_ sender: UIButton) {
         let viewController: ViewControllerB = instantiateViewController(withParentStoryboard: .main)
-        viewController.viewBIdentifier = ViewControllerB.viewControllerIdentifier
+        viewController.viewBIdentifier = ViewControllerB.identifier
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    @IBAction func customTableViewDidTap(_ sender: UIButton) {
+        
+        let viewController: CustomTableViewController = CustomTableViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
 }
