@@ -66,7 +66,32 @@ viewController.viewAIdentifier = ViewControllerA.viewControllerIdentifier
 navigationController?.pushViewController(viewController, animated: true)
 ```
 
+Not only view controller can use the protocol, UITableViewCell can fully utilized the protocol.
+
+# UITableViewCell
+
+Replace
+```
+tableView.register(CustomTableViewCell.self(), forCellReuseIdentifier: String(describing: CustomTableViewCell.self))
+```
+with
+```
+tableView.registerCell(CustomTableViewCell.self)
+```
+Replace
+```
+guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CustomTableViewCell.self), for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
+```
+with
+```
+let cell: CustomTableViewCell = tableView.dequeueCell(forIndexPath: indexPath)
+```
+Neat and easy right? : ) wish you like it.
+
 ## Ideas come from
 
 * [AndyyHope](https://github.com/andyyhope/Blog_UIStoryboardSafety) - UIStoryboard: Safer with Enums, Protocol Extensions and Generics
 * [Stan Ostrovskiy](https://medium.com/ios-os-x-development/xcode-a-better-way-to-deal-with-storyboards-8b6a8b504c06) - Xcode: A Better Way to Deal with Storyboards
+*[Natasha The Robot](https://www.natashatherobot.com/swift-3-0-refactoring-cues/) - Swift 3.0 Refactoring Cues
+
+Thanks.
