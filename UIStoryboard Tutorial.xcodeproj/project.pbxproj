@@ -20,6 +20,10 @@
 		5E4575051FCC544300023778 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4575041FCC544300023778 /* ViewControllerB.swift */; };
 		5E4575071FCC594400023778 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4575061FCC594400023778 /* UIStoryboard+Extension.swift */; };
 		5E48AB671FCCD81A00EDB8D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E48AB661FCCD81A00EDB8D5 /* README.md */; };
+		5E5CCB741FCEFFDD0030549E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CCB731FCEFFDD0030549E /* UIView+Extension.swift */; };
+		5E5CCB761FCF01AC0030549E /* CustomNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5CCB751FCF01AC0030549E /* CustomNibView.xib */; };
+		5E5CCB781FCF01CB0030549E /* CustomNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CCB771FCF01CB0030549E /* CustomNibView.swift */; };
+		5E5CCB7A1FCF02910030549E /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CCB791FCF02910030549E /* CustomViewController.swift */; };
 		5EE7348E1FCDA92300A593AA /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7348D1FCDA92300A593AA /* CustomTableViewController.swift */; };
 		5EE734901FCDAA4100A593AA /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7348F1FCDAA4100A593AA /* UITableViewCell+Extension.swift */; };
 		5EE734921FCDAAF800A593AA /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE734911FCDAAF800A593AA /* UITableView+Extension.swift */; };
@@ -42,6 +46,10 @@
 		5E4575041FCC544300023778 /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 		5E4575061FCC594400023778 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		5E48AB661FCCD81A00EDB8D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5E5CCB731FCEFFDD0030549E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5E5CCB751FCF01AC0030549E /* CustomNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNibView.xib; sourceTree = "<group>"; };
+		5E5CCB771FCF01CB0030549E /* CustomNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNibView.swift; sourceTree = "<group>"; };
+		5E5CCB791FCF02910030549E /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		5EE7348D1FCDA92300A593AA /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		5EE7348F1FCDAA4100A593AA /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		5EE734911FCDAAF800A593AA /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
@@ -90,8 +98,12 @@
 				5E4575061FCC594400023778 /* UIStoryboard+Extension.swift */,
 				5EE7348F1FCDAA4100A593AA /* UITableViewCell+Extension.swift */,
 				5EE734911FCDAAF800A593AA /* UITableView+Extension.swift */,
+				5E5CCB731FCEFFDD0030549E /* UIView+Extension.swift */,
 				5EE7348D1FCDA92300A593AA /* CustomTableViewController.swift */,
 				5EE734931FCDAE9A00A593AA /* Identifiable.swift */,
+				5E5CCB751FCF01AC0030549E /* CustomNibView.xib */,
+				5E5CCB771FCF01CB0030549E /* CustomNibView.swift */,
+				5E5CCB791FCF02910030549E /* CustomViewController.swift */,
 				5E4574EB1FCC49DD00023778 /* Assets.xcassets */,
 				5E4574ED1FCC49DD00023778 /* LaunchScreen.storyboard */,
 				5E4574F01FCC49DD00023778 /* Info.plist */,
@@ -160,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E48AB671FCCD81A00EDB8D5 /* README.md in Resources */,
+				5E5CCB761FCF01AC0030549E /* CustomNibView.xib in Resources */,
 				5E4574F91FCC4D6100023778 /* HomeViewController.storyboard in Resources */,
 				5E4575011FCC542B00023778 /* Main.storyboard in Resources */,
 				5E4574EF1FCC49DD00023778 /* LaunchScreen.storyboard in Resources */,
@@ -176,11 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E4574F71FCC4A5700023778 /* UIViewController+Extension.swift in Sources */,
+				5E5CCB7A1FCF02910030549E /* CustomViewController.swift in Sources */,
 				5E4574E51FCC49DD00023778 /* AppDelegate.swift in Sources */,
 				5E4574FF1FCC4E1200023778 /* SecondViewController.swift in Sources */,
 				5E4575051FCC544300023778 /* ViewControllerB.swift in Sources */,
 				5EE734901FCDAA4100A593AA /* UITableViewCell+Extension.swift in Sources */,
 				5EE7348E1FCDA92300A593AA /* CustomTableViewController.swift in Sources */,
+				5E5CCB741FCEFFDD0030549E /* UIView+Extension.swift in Sources */,
+				5E5CCB781FCF01CB0030549E /* CustomNibView.swift in Sources */,
 				5E4575031FCC543A00023778 /* ViewControllerA.swift in Sources */,
 				5EE734921FCDAAF800A593AA /* UITableView+Extension.swift in Sources */,
 				5EE734941FCDAE9A00A593AA /* Identifiable.swift in Sources */,

@@ -47,6 +47,10 @@ class HomeViewController: UIViewController {
         let viewController: CustomTableViewController = CustomTableViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
+    @IBAction func customVIewDidTap(_ sender: UIButton) {
+        let viewControler: CustomViewController = CustomViewController()
+        navigationController?.pushViewController(viewControler, animated: true)
+    }
     
     
 }

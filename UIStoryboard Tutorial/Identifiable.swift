@@ -16,6 +16,14 @@ extension Identifiable where Self: UIView {
     static var identifier: String {
         return String(describing: self)
     }
+    
+    static func instantiateNib<T: UIView>() -> T {
+        guard let view = Bundle.main.loadNibNamed(T.identifier, owner: nil, options: nil)?.first as? T
+            else {
+                fatalError("Could not instantiate view from nib with identifier \(T.identifier)")
+        }
+        return view
+    }
 }
 
 extension Identifiable where Self: UIViewController {

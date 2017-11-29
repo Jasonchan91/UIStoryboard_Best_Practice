@@ -13,6 +13,10 @@ extension UITableView {
         register(T.self, forCellReuseIdentifier: T.identifier)
     }
     
+    func registerCellNib<T: UITableViewCell>(_: T.Type) {
+        register(UINib(nibName: T.identifier, bundle: nil), forCellReuseIdentifier: T.identifier)
+    }
+    
     func dequeueCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T {
         guard let cell = self.dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as? T else {
             fatalError("Could not dequeue tableViewCell with identifier \(T.identifier)")
