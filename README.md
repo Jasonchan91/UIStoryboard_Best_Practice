@@ -74,9 +74,18 @@ Replace
 ```
 tableView.register(CustomTableViewCell.self(), forCellReuseIdentifier: String(describing: CustomTableViewCell.self))
 ```
+and
+
+```
+tableView.register(UINib(nibName: String(describing: CustomTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: CustomTableViewCell.self))
+```
 with
 ```
 tableView.registerCell(CustomTableViewCell.self)
+```
+and
+```
+tableView.registerCellNib(CustomTableViewCell.self)
 ```
 Replace
 ```
@@ -87,6 +96,17 @@ with
 let cell: CustomTableViewCell = tableView.dequeueCell(forIndexPath: indexPath)
 ```
 Neat and easy right? : ) wish you like it.
+
+Not only this! Now you are able to get view from nib file easily!!!
+
+replace
+```
+let view = Bundle.main.loadNibNamed(String(describing: CustomNibView.self), owner: nil, options: nil)!.first as! CustomNibView
+```
+with
+```
+let view: CustomNibView = UIView.instantiateNib()
+```
 
 ## Ideas come from
 
